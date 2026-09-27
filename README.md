@@ -47,4 +47,4 @@ I am a first-year Computer Science undergraduate at **Scaler School of Technolog
 
 - **Email**: [payanshijain51@gmail.com](mailto:payanshijain51@gmail.com)
 - **GitHub**: [@payanshi27](https://github.com/payanshi27)
-- **LinkedIn**: [payanshi-jain](https://www.linkedin.com/in/payanshi-jain)
+- **LinkedIn**: [payanshi-jain](https://www.linkedin.com/in/payanshi-jain-20204b429/)
