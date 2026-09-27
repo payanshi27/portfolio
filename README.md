@@ -38,7 +38,7 @@ I am a first-year Computer Science undergraduate at **Scaler School of Technolog
 ## 🎓 Education
 
 - **Scaler School of Technology** (Degree awarded by BITS Pilani)  
-  *B.Tech in Computer Science (2026 – 2029)*  
+  *B.Tech in Computer Science (2026 – 2030)*  
   Bengaluru, India
 
 ---
