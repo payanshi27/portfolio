@@ -3,505 +3,419 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Payanshi Jain — Digital Craft &amp; Web Systems 2026. B.Tech Computer Science at Scaler School of Technology (BITS Pilani). Pure semantic HTML5 &amp; advanced CSS3 spatial perspective.">
+  <meta name="description" content="Payanshi Jain — Portfolio. Student &amp; Web Development Learner at Scaler School of Technology (BITS Pilani). Building projects with HTML, CSS, and Java.">
   <meta name="author" content="Payanshi Jain">
-  <title>Payanshi Jain — Digital Craft &amp; Web Systems</title>
+  <title>Payanshi Jain | Portfolio</title>
+  
+  <!-- Modern Typography Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23080C12'/><text y='.72em' x='20' font-size='62' font-family='sans-serif' font-weight='800' fill='%23FFFFFF'>PJ</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231E293B'/><text y='.72em' x='20' font-size='62' font-family='sans-serif' font-weight='800' fill='%2360A5FA'>PJ</text></svg>">
 </head>
 <body>
 
-  <!-- ========================================================================
-       01. MINIMAL FIXED NAVIGATION (LUXURY FROSTED GALLERY BAR)
-       ======================================================================== -->
-  <header class="site-nav">
-    <div class="canvas-frame nav-inner">
-      <a href="#hero" class="nav-brand" aria-label="Payanshi Jain Origin">
-        <div class="brand-monogram" aria-hidden="true">PJ</div>
-        <div class="brand-meta">
-          <span class="brand-name">Payanshi Jain</span>
-          <span class="brand-spec">Web Systems // Digital Craft</span>
-        </div>
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="Payanshi Jain Home">
+        PJ<span>.</span>
       </a>
 
-      <!-- Pure CSS Mobile Hamburger Input Toggle -->
-      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle Navigation Menu">
-
-      <!-- Navigation Menu -->
-      <nav class="nav-menu" aria-label="Main Navigation">
-        <a href="#work" class="nav-menu-link"><span class="num-prefix">01/</span>Projects</a>
-        <a href="#manifesto" class="nav-menu-link"><span class="num-prefix">02/</span>About</a>
-        <a href="#laboratory" class="nav-menu-link"><span class="num-prefix">03/</span>Laboratory</a>
-        <a href="#capabilities" class="nav-menu-link"><span class="num-prefix">04/</span>Skills</a>
-        <a href="#dossier" class="nav-menu-link"><span class="num-prefix">05/</span>Education</a>
-        <a href="#transmission" class="nav-menu-link"><span class="num-prefix">06/</span>Contact</a>
-      </nav>
-
-      <div class="nav-actions">
-        <div class="beacon-pill">
-          <span class="beacon-dot"></span>
-          <span>Online // 2026</span>
-        </div>
-        <a href="./resume.pdf" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">
-          <span>Dossier ↗</span>
-        </a>
-      </div>
-
-      <!-- Hamburger Icon for Mobile -->
-      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+      <!-- Mobile Navigation Hamburger Checkbox -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open Navigation">
         <span></span>
         <span></span>
         <span></span>
       </label>
+
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/payanshi27" target="_blank" rel="noopener" class="btn btn-github">
+          <span>GitHub</span>
+          <span>↗</span>
+        </a>
+        <a href="./resume.pdf" target="_blank" rel="noopener" class="btn btn-resume">
+          <span>Resume</span>
+          <span>↓</span>
+        </a>
+      </div>
     </div>
   </header>
 
   <main>
 
-    <!-- ======================================================================
-         02. HERO INSTALLATION & 3D GYRO-ARMILLARY SCULPTURE
-         ====================================================================== -->
-    <section id="hero" class="hero-installation">
-      <!-- Architectural Watermark Typography -->
-      <div class="hero-watermark" aria-hidden="true">PAYANSHI</div>
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="hero-section">
+      <div class="ambient-glow glow-top"></div>
+      <div class="ambient-glow glow-bottom"></div>
 
-      <div class="canvas-frame hero-layout-grid">
-        <div class="hero-typography-block">
-          <div class="hero-meta-strip">
-            <span>Student &amp; Web Development Learner // Scaler &amp; BITS Pilani</span>
+      <div class="container hero-container">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span>Student &amp; Web Development Learner</span>
           </div>
 
-          <h1 class="hero-monument-title">
-            Designing<br>
-            Interactive<br>
-            <span class="editorial-italic">Realities.</span>
+          <h1 class="hero-title">
+            Hello, I'm <br>
+            <span class="gradient-text">Payanshi Jain</span>
           </h1>
 
-          <p class="hero-manifesto-text">
-            I am <strong>Payanshi Jain</strong>, a Computer Science student at
-            <strong>Scaler School of Technology</strong> (degree awarded by BITS Pilani).
-            I build responsive web interfaces and software with clean semantic HTML5,
-            modern CSS3 Flexbox and Grid, and Java. I believe the best way to learn is by building and experimenting.
+          <p class="hero-description">
+            I'm a first-year Computer Science student at <strong>Scaler School of Technology</strong>
+            (degree awarded by BITS Pilani). I enjoy learning new concepts and understanding how websites
+            and software work by building practical projects with HTML, CSS, and programming.
           </p>
 
-          <div class="hero-cta-cluster">
-            <a href="#work" class="btn btn-primary">
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
               <span>View My Projects</span>
               <span>↓</span>
             </a>
-            <a href="#transmission" class="btn btn-secondary">
+            <a href="#contact" class="btn btn-secondary">
               <span>Contact Me</span>
               <span>→</span>
             </a>
-            <a href="./resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener">
-              <span>Download Dossier ↗</span>
+            <a href="https://github.com/payanshi27" target="_blank" rel="noopener" class="btn btn-outline">
+              <span>Visit GitHub ↗</span>
             </a>
           </div>
 
-          <!-- Micro-Metrics Telemetry Band -->
-          <div class="hero-telemetry-band">
-            <div class="telemetry-item">
-              <span class="telemetry-val">02+</span>
-              <span class="telemetry-label">Shipped Web Projects</span>
+          <!-- Student Focus Highlights -->
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <span class="highlight-num">02</span>
+              <span class="highlight-label">Web Projects Built</span>
             </div>
-            <div class="telemetry-item">
-              <span class="telemetry-val">100%</span>
-              <span class="telemetry-label">Semantic &amp; Responsive</span>
+            <div class="highlight-item">
+              <span class="highlight-num">SST</span>
+              <span class="highlight-label">Scaler &amp; BITS Pilani</span>
             </div>
-            <div class="telemetry-item">
-              <span class="telemetry-val">Zero</span>
-              <span class="telemetry-label">Runtime Framework Bloat</span>
+            <div class="highlight-item">
+              <span class="highlight-num">100%</span>
+              <span class="highlight-label">Learning By Building</span>
             </div>
           </div>
         </div>
 
-        <!-- Monumental 3D Gyro-Armillary Sculpture (Pure CSS 3D Preserve-3d) -->
-        <div class="sculpture-armillary-stage" aria-label="Interactive 3D Armillary Digital Sculpture">
-          <div class="armillary-core">
-            <!-- 3 Concentric Titanium Gimbal Rings -->
-            <div class="armillary-ring ring-outer-1"></div>
-            <div class="armillary-ring ring-outer-2"></div>
-            <div class="armillary-ring ring-outer-3"></div>
-
-            <!-- Central 3D Faceted Crystal Cube -->
-            <div class="armillary-crystal-cube">
-              <div class="crystal-facet facet-front">HTML5</div>
-              <div class="crystal-facet facet-back">CSS3 3D</div>
-              <div class="crystal-facet facet-right">FLEXBOX</div>
-              <div class="crystal-facet facet-left">JAVA CORE</div>
-              <div class="crystal-facet facet-top">RESPONSIVE</div>
-              <div class="crystal-facet facet-bottom">ZERO JS</div>
+        <!-- Hero Terminal Card -->
+        <div class="hero-card-wrapper">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-title">bash — payanshi@scaler</div>
             </div>
 
-            <!-- Orbiting 3D Telemetry Satellites -->
-            <div class="orbit-chip chip-pos-1">[ SCALER &amp; BITS PILANI ]</div>
-            <div class="orbit-chip chip-pos-2">[ 12.97°N · 77.59°E ]</div>
-            <div class="orbit-chip chip-pos-3">[ PURE SEMANTIC CSS3 ]</div>
+            <div class="terminal-body">
+              <div class="terminal-row">
+                <span class="term-prompt">$</span> <span class="term-cmd">whoami</span>
+              </div>
+              <div class="term-output bold">Payanshi Jain</div>
+
+              <div class="terminal-row">
+                <span class="term-prompt">$</span> <span class="term-cmd">college</span>
+              </div>
+              <div class="term-output">Scaler School of Technology · BITS Pilani</div>
+
+              <div class="terminal-row">
+                <span class="term-prompt">$</span> <span class="term-cmd">role</span>
+              </div>
+              <div class="term-output accent">Web Development Student &amp; CS Learner</div>
+
+              <div class="terminal-row">
+                <span class="term-prompt">$</span> <span class="term-cmd">current-skills</span>
+              </div>
+              <div class="term-skills-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Flexbox</span>
+                <span class="tag">Java</span>
+                <span class="tag">Git</span>
+                <span class="tag">GitHub</span>
+              </div>
+
+              <div class="terminal-row">
+                <span class="term-prompt">$</span> <span class="term-cmd">status</span>
+              </div>
+              <div class="term-output green">● Active Learner · Building Every Day <span class="cursor-blink">█</span></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ======================================================================
-         03. INFINITE KINETIC MARQUEE RIBBON
-         ====================================================================== -->
-    <div class="marquee-ribbon" aria-hidden="true">
-      <div class="marquee-track">
-        <div class="marquee-content">
-          <span>SCALER SCHOOL OF TECHNOLOGY</span>
-          <span class="marquee-bullet">✦</span>
-          <span>BITS PILANI ACCREDITATION</span>
-          <span class="marquee-bullet">✦</span>
-          <span>SEMANTIC HTML5 STRUCTURES</span>
-          <span class="marquee-bullet">✦</span>
-          <span>CSS3 FLEXBOX &amp; GRID ARCHITECTURE</span>
-          <span class="marquee-bullet">✦</span>
-          <span>JAVA PROGRAMMING &amp; OOP</span>
-          <span class="marquee-bullet">✦</span>
-          <span>PURE VANILLA CSS</span>
-          <span class="marquee-bullet">✦</span>
-          <span>ZERO JAVASCRIPT RUNTIME</span>
-          <span class="marquee-bullet">✦</span>
-          <span>RESPONSIVE VIEWPORT DESIGN</span>
-          <span class="marquee-bullet">✦</span>
-          <span>GIT &amp; GITHUB WORKFLOW</span>
-          <span class="marquee-bullet">✦</span>
-        </div>
-        <div class="marquee-content">
-          <span>SCALER SCHOOL OF TECHNOLOGY</span>
-          <span class="marquee-bullet">✦</span>
-          <span>BITS PILANI ACCREDITATION</span>
-          <span class="marquee-bullet">✦</span>
-          <span>SEMANTIC HTML5 STRUCTURES</span>
-          <span class="marquee-bullet">✦</span>
-          <span>CSS3 FLEXBOX &amp; GRID ARCHITECTURE</span>
-          <span class="marquee-bullet">✦</span>
-          <span>JAVA PROGRAMMING &amp; OOP</span>
-          <span class="marquee-bullet">✦</span>
-          <span>PURE VANILLA CSS</span>
-          <span class="marquee-bullet">✦</span>
-          <span>ZERO JAVASCRIPT RUNTIME</span>
-          <span class="marquee-bullet">✦</span>
-          <span>RESPONSIVE VIEWPORT DESIGN</span>
-          <span class="marquee-bullet">✦</span>
-          <span>GIT &amp; GITHUB WORKFLOW</span>
-          <span class="marquee-bullet">✦</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ======================================================================
-         04. ARCHITECTURAL MANIFESTO (ABOUT SECTION)
-         ====================================================================== -->
-    <section id="manifesto" class="manifesto-section">
-      <div class="canvas-frame">
-        <div class="gallery-landmark-header">
-          <div class="landmark-tag-row">
-            <span class="landmark-index">01 // Architectural Intention</span>
-            <span class="landmark-coords">LOC: 12.9716° N · 77.5946° E</span>
-          </div>
-          <h2 class="landmark-headline">Learning By Building.</h2>
-          <p class="landmark-subtitle">
-            A student's commitment to foundational craft: mastering the core building blocks of the web and computer science from first principles.
-          </p>
+    <!-- ================= ABOUT ME ================= -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01 — ABOUT ME</span>
+          <h2 class="section-title">A little about <span>me.</span></h2>
+          <p class="section-subtitle">Understanding how websites and software work from first principles.</p>
         </div>
 
-        <div class="manifesto-grid">
-          <div class="manifesto-editorial-col">
-            <blockquote class="manifesto-callout-quote">
-              "Every project helps me understand a new concept and improve my development skills. I believe the best way to learn is to build, experiment, make mistakes, and improve."
-            </blockquote>
-
-            <p class="manifesto-body-text">
-              I'm <strong>Payanshi Jain</strong>, an undergraduate in Computer Science at
-              <strong>Scaler School of Technology</strong> in Bengaluru, with my degree awarded by
-              <strong>BITS Pilani</strong>. I enjoy understanding how websites and software function
-              under the surface — from pixel-perfect CSS layout engines to object-oriented programming in Java.
+        <div class="about-grid">
+          <div class="about-narrative">
+            <p>
+              I'm <strong>Payanshi Jain</strong>, an undergraduate Computer Science student at
+              <strong>Scaler School of Technology</strong> in Bengaluru (with my degree awarded by <strong>BITS Pilani</strong>).
+              I have a strong interest in understanding how modern websites function — from basic page structure to responsive styling and design layouts.
             </p>
-
-            <p class="manifesto-body-text">
-              My current focus is strengthening my programming, layout architecture, and web development
-              fundamentals by creating practical, accessible projects. Rather than relying on heavy client-side
-              frameworks, I treat <strong>semantic HTML5 and native CSS3</strong> as high-performance creative media
-              capable of fluid responsiveness, spatial depth, and tactile micro-interactions with zero runtime overhead.
+            <p>
+              My current focus is on strengthening my programming and web development foundations by creating practical, real-world projects.
+              I work with semantic HTML, CSS layouts, Flexbox, responsive design, and Java for programming logic and problem solving.
+            </p>
+            <p class="about-quote">
+              "I believe the best way to learn is to build, experiment, make mistakes, and continuously improve."
             </p>
           </div>
 
-          <!-- Technical Specification Matrix Cards -->
-          <div class="manifesto-spec-col">
-            <article class="spec-matrix-card">
-              <div class="matrix-header">
-                <span class="matrix-title">Disciplines</span>
-                <span class="matrix-id">SPEC // 01</span>
+          <div class="about-cards-col">
+            <div class="card-feature">
+              <div class="feature-icon">&lt;/&gt;</div>
+              <div class="feature-info">
+                <h3>Learning by Building</h3>
+                <p>Every single project helps me understand a new concept, solve layout challenges, and improve my development skills.</p>
               </div>
-              <div class="matrix-chips-flow">
-                <span class="matrix-chip">Responsive Web Design</span>
-                <span class="matrix-chip">CSS Flexbox Systems</span>
-                <span class="matrix-chip">Semantic HTML5 Layouts</span>
-                <span class="matrix-chip">Object-Oriented Java</span>
-                <span class="matrix-chip">Web Accessibility (a11y)</span>
-                <span class="matrix-chip">Version Control &amp; Git</span>
-              </div>
-            </article>
+            </div>
 
-            <article class="spec-matrix-card">
-              <div class="matrix-header">
-                <span class="matrix-title">Kernel Stack</span>
-                <span class="matrix-id">SPEC // 02</span>
+            <div class="card-feature">
+              <div class="feature-icon">☕</div>
+              <div class="feature-info">
+                <h3>Programming Logic</h3>
+                <p>Practicing core Java, object-oriented concepts, and algorithmic problem solving as part of my computer science curriculum.</p>
               </div>
-              <div class="matrix-chips-flow">
-                <span class="matrix-chip">HTML5</span>
-                <span class="matrix-chip">CSS3 (3D / Flex / Grid)</span>
-                <span class="matrix-chip">Java (JDK 21)</span>
-                <span class="matrix-chip">Git</span>
-                <span class="matrix-chip">GitHub</span>
-                <span class="matrix-chip">VS Code</span>
-                <span class="matrix-chip">Chrome DevTools</span>
-              </div>
-            </article>
+            </div>
 
-            <article class="spec-matrix-card">
-              <div class="matrix-header">
-                <span class="matrix-title">Foundations &amp; Practice</span>
-                <span class="matrix-id">SPEC // 03</span>
+            <div class="card-feature">
+              <div class="feature-icon">🌿</div>
+              <div class="feature-info">
+                <h3>Version Control</h3>
+                <p>Using Git and GitHub regularly to manage code, track progress, and learn standard collaborative developer workflows.</p>
               </div>
-              <div class="matrix-chips-flow">
-                <span class="matrix-chip">Mobile-First Viewports</span>
-                <span class="matrix-chip">CSS Box Model</span>
-                <span class="matrix-chip">Structured Data Tables</span>
-                <span class="matrix-chip">Accessible Forms</span>
-                <span class="matrix-chip">Zero Framework Bloat</span>
-              </div>
-            </article>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ======================================================================
-         05. EXHIBITION PAVILIONS (PROJECT SHOWCASE — REAL STUDENT WORK)
-         ====================================================================== -->
-    <section id="work">
-      <div class="canvas-frame">
-        <div class="gallery-landmark-header">
-          <div class="landmark-tag-row">
-            <span class="landmark-index">02 // Selected Projects</span>
-            <span class="landmark-coords">BUILT &amp; SHIPPED ARTIFACTS</span>
-          </div>
-          <h2 class="landmark-headline">Museum-Grade Project Pavilions</h2>
-          <p class="landmark-subtitle">
-            Explore the web applications, interactive interfaces, and software architectures I've built.
-          </p>
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02 — MY SKILLS</span>
+          <h2 class="section-title">Technologies I <span>use.</span></h2>
+          <p class="section-subtitle">The foundational languages, styling systems, and tools I work with.</p>
         </div>
 
-        <div class="pavilions-gallery">
+        <div class="skills-grid">
+          <!-- Skill 01 -->
+          <div class="skill-card">
+            <div class="skill-head">
+              <span class="skill-num">01</span>
+              <span class="skill-badge">Structure</span>
+            </div>
+            <h3>HTML5</h3>
+            <p>Writing clean, semantic HTML structure for web pages, forms, tables, and document hierarchy.</p>
+          </div>
 
-          <!-- Pavilion 01: FLEXBOX QUEST -->
-          <article class="pavilion-exhibit">
-            <div class="pavilion-watermark-num" aria-hidden="true">01</div>
+          <!-- Skill 02 -->
+          <div class="skill-card">
+            <div class="skill-head">
+              <span class="skill-num">02</span>
+              <span class="skill-badge">Styling</span>
+            </div>
+            <h3>CSS3 &amp; Flexbox</h3>
+            <p>Crafting modern styles, colors, typography, Flexbox alignments, CSS Grid, and responsive viewports.</p>
+          </div>
 
-            <div class="pavilion-dossier">
-              <div class="pavilion-header-tag">
-                <span>01 // INTERACTIVE GAME LAYOUT ENGINE</span>
+          <!-- Skill 03 -->
+          <div class="skill-card">
+            <div class="skill-head">
+              <span class="skill-num">03</span>
+              <span class="skill-badge">Programming</span>
+            </div>
+            <h3>Java</h3>
+            <p>Learning programming fundamentals, object-oriented design, logic building, and problem solving.</p>
+          </div>
+
+          <!-- Skill 04 -->
+          <div class="skill-card">
+            <div class="skill-head">
+              <span class="skill-num">04</span>
+              <span class="skill-badge">Tracking</span>
+            </div>
+            <h3>Git</h3>
+            <p>Managing versions, branch changes, commit history, and tracking project milestones locally.</p>
+          </div>
+
+          <!-- Skill 05 -->
+          <div class="skill-card">
+            <div class="skill-head">
+              <span class="skill-num">05</span>
+              <span class="skill-badge">Collaboration</span>
+            </div>
+            <h3>GitHub</h3>
+            <p>Hosting code repositories, publishing projects via GitHub Pages, and managing source code online.</p>
+          </div>
+
+          <!-- Skill 06 -->
+          <div class="skill-card">
+            <div class="skill-head">
+              <span class="skill-num">06</span>
+              <span class="skill-badge">Editor</span>
+            </div>
+            <h3>VS Code</h3>
+            <p>Configuring development workflows, extensions, live server testing, and inspecting code with Chrome DevTools.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03 — MY PROJECTS</span>
+          <h2 class="section-title">Things I've <span>built.</span></h2>
+          <p class="section-subtitle">Real, practical projects built during my learning journey at Scaler.</p>
+        </div>
+
+        <div class="projects-container">
+
+          <!-- PROJECT 01: FLEXBOX QUEST -->
+          <article class="project-showcase-card">
+            <div class="project-details">
+              <div class="project-meta-strip">
+                <span class="project-index">PROJECT 01</span>
+                <span class="project-category">HTML · CSS · FLEXBOX</span>
               </div>
 
-              <h3 class="pavilion-title">Flexbox Quest</h3>
-              <p class="pavilion-subtitle">Game-Inspired Spatial Interface Built with Modern Flexbox Mechanics</p>
-
-              <p class="pavilion-narrative">
-                A game-inspired web application engineered to master CSS Flexbox mechanics, multi-axis spatial alignment,
-                dynamic content distribution, and responsive wrap states. Includes interactive player-star coordinates,
-                tactile HUD status controls, and fluid bounding box calculations with <strong>zero external UI dependencies</strong>.
+              <h3 class="project-title">Flexbox Quest</h3>
+              <p class="project-desc">
+                A game-inspired web interface created to practice and master CSS Flexbox mechanics, multi-axis alignments,
+                content justification, spacing, and responsive design across screen sizes.
               </p>
 
-              <div class="pavilion-proof-banner">
-                ⚡ <strong>Pure Modern Layout:</strong> Leverages <code>display: flex</code>, <code>justify-content: space-between</code>, and responsive viewport clamping for instantaneous sub-millisecond layout reflows across mobile and desktop.
+              <div class="project-key-points">
+                <div class="key-point">
+                  <span class="check-icon">✓</span>
+                  <span>Interactive game area featuring player tokens, star collectibles, and platforms.</span>
+                </div>
+                <div class="key-point">
+                  <span class="check-icon">✓</span>
+                  <span>Game status HUD panel displaying live stats: Lives (3), Coins (120), and Level (1).</span>
+                </div>
+                <div class="key-point">
+                  <span class="check-icon">✓</span>
+                  <span>Built with pure HTML and CSS using <code>justify-content: space-between</code> and <code>align-items: center</code>.</span>
+                </div>
               </div>
 
-              <div class="pavilion-tech-stack">
-                <span class="pavilion-tag">HTML5 Semantic</span>
-                <span class="pavilion-tag">CSS3 Flexbox</span>
-                <span class="pavilion-tag">Responsive Mechanics</span>
-                <span class="pavilion-tag">Interactive HUD</span>
-                <span class="pavilion-tag">Zero JavaScript</span>
+              <div class="project-tags-row">
+                <span class="ptag">HTML5</span>
+                <span class="ptag">CSS3</span>
+                <span class="ptag">Flexbox</span>
+                <span class="ptag">Responsive Design</span>
+                <span class="ptag">Game UI</span>
               </div>
 
-              <div class="pavilion-actions">
-                <a href="./projects/flexbox-quest/index.html" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+              <div class="project-buttons">
+                <a href="./projects/flexbox-quest/index.html" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
                   <span>Play Project Live</span>
-                  <span>↗</span>
+                  <span>→</span>
                 </a>
-                <a href="https://github.com/payanshi27/portfolio" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">
-                  <span>View Repository ↗</span>
+                <a href="https://github.com/payanshi27/portfolio" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                  <span>View Code on GitHub ↗</span>
                 </a>
               </div>
             </div>
 
-            <!-- Pavilion 01 Stage: SVG Device Chassis -->
-            <div class="pavilion-stage" aria-label="Flexbox Quest Game Interface Chassis">
-              <div class="stage-rackmount-chassis">
-                <div class="device-chrome-head">
-                  <span>FLEXBOX-QUEST // ENGINE_CORE.CSS</span>
-                  <span style="color:var(--accent-cobalt-light); font-weight:700;">● PLAYABLE DEMO</span>
+            <!-- Project Visual Showcase -->
+            <div class="project-preview-frame">
+              <div class="frame-bar">
+                <div class="frame-dots">
+                  <span></span><span></span><span></span>
                 </div>
-                <img src="images/flexbox-preview.svg" alt="Flexbox Quest Game Engine and Layout Preview" width="760" height="380" loading="lazy">
+                <span class="frame-url">projects/flexbox-quest/index.html</span>
               </div>
+              <img src="images/flexbox-preview.svg" alt="Flexbox Quest Game UI Preview" width="760" height="380" loading="lazy">
             </div>
           </article>
 
-          <!-- Pavilion 02: STUDENT PORTAL -->
-          <article class="pavilion-exhibit reverse-flow">
-            <div class="pavilion-watermark-num" aria-hidden="true">02</div>
-
-            <div class="pavilion-dossier">
-              <div class="pavilion-header-tag">
-                <span>02 // ACADEMIC DATA ARCHITECTURE</span>
+          <!-- PROJECT 02: STUDENT PORTAL -->
+          <article class="project-showcase-card reverse">
+            <div class="project-details">
+              <div class="project-meta-strip">
+                <span class="project-index">PROJECT 02</span>
+                <span class="project-category">HTML · CSS · FORMS &amp; TABLES</span>
               </div>
 
-              <h3 class="pavilion-title">Student Portal</h3>
-              <p class="pavilion-subtitle">Scalable Academic Management Dashboard &amp; Interactive Form Engine</p>
-
-              <p class="pavilion-narrative">
-                A comprehensive student information and academic management system created with semantic HTML5 and advanced CSS3.
-                Features structured tabular course listings, live student identity profiles, responsive timetable matrices,
-                and an accessible course registration form built strictly to <strong>WCAG accessibility standards</strong>.
+              <h3 class="project-title">Student Portal</h3>
+              <p class="project-desc">
+                A comprehensive student portal interface created using semantic HTML and CSS. It includes student profiles,
+                academic schedule data tables, subject lists, and a complete course registration form.
               </p>
 
-              <div class="pavilion-proof-banner">
-                ⚡ <strong>Accessibility First:</strong> Implements semantic landmarks, accessible table structures with headers, high-contrast typography, and zero layout breakage even at 200% zoom.
-              </div>
-
-              <div class="pavilion-tech-stack">
-                <span class="pavilion-tag">HTML5 Semantic</span>
-                <span class="pavilion-tag">CSS Grid &amp; Tables</span>
-                <span class="pavilion-tag">Form Validation</span>
-                <span class="pavilion-tag">Accessibility (a11y)</span>
-              </div>
-
-              <div class="pavilion-actions">
-                <a href="./projects/student-portal/student-portal.html" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
-                  <span>Launch Portal Live</span>
-                  <span>↗</span>
-                </a>
-                <a href="https://github.com/payanshi27/portfolio" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">
-                  <span>View Repository ↗</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Pavilion 02 Stage: SVG Device Chassis -->
-            <div class="pavilion-stage" aria-label="Student Portal Academic Dashboard Chassis">
-              <div class="stage-rackmount-chassis">
-                <div class="device-chrome-head">
-                  <span>STUDENT_PORTAL // SCHEDULE_VIEW.HTML</span>
-                  <span style="color:var(--accent-sage); font-weight:700;">● MATRICULATION LIVE</span>
+              <div class="project-key-points">
+                <div class="key-point">
+                  <span class="check-icon">✓</span>
+                  <span>Structured student information dashboard with enrollment details and status badges.</span>
                 </div>
-                <img src="images/portal-preview.svg" alt="Student Portal Academic Dashboard and Registration Form Preview" width="760" height="380" loading="lazy">
-              </div>
-            </div>
-          </article>
-
-          <!-- Pavilion 03: WEB DEV COMPONENT LAB -->
-          <article class="pavilion-exhibit">
-            <div class="pavilion-watermark-num" aria-hidden="true">03</div>
-
-            <div class="pavilion-dossier">
-              <div class="pavilion-header-tag">
-                <span>03 // SPATIAL CSS ARCHITECTURE</span>
-              </div>
-
-              <h3 class="pavilion-title">Aura &amp; WebDev Lab</h3>
-              <p class="pavilion-subtitle">Pure HTML5 &amp; CSS3 Spatial Perspective Installation</p>
-
-              <p class="pavilion-narrative">
-                Created for Scaler School of Technology's WebDev 101 Builders Day. Demonstrates pure CSS layout mastery:
-                multi-axis 3D perspective preserving depth, keyframe gyroscopic rotation, responsive mobile-first architecture,
-                and micro-interactions crafted with <strong>zero client-side JavaScript</strong>.
-              </p>
-
-              <div class="pavilion-proof-banner">
-                ⚡ <strong>Zero Framework Footprint:</strong> 100% semantic HTML5 and vanilla CSS3. Extreme Lighthouse performance, instant first paint, and total accessibility compliance.
-              </div>
-
-              <div class="pavilion-tech-stack">
-                <span class="pavilion-tag">HTML5 Semantic</span>
-                <span class="pavilion-tag">CSS3 3D Preserves</span>
-                <span class="pavilion-tag">CSS Keyframes</span>
-                <span class="pavilion-tag">Zero JavaScript</span>
-              </div>
-
-              <div class="pavilion-actions">
-                <a href="#laboratory" class="btn btn-primary btn-sm">
-                  <span>Explore Laboratory</span>
-                  <span>↓</span>
-                </a>
-                <a href="https://github.com/payanshi27/portfolio" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">
-                  <span>Repository ↗</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Pavilion 03 Frame with Layout Diagram -->
-            <div class="pavilion-stage" aria-label="Aura Spatial Perspective Architecture">
-              <div class="stage-rackmount-chassis">
-                <div class="device-chrome-head">
-                  <span>PAYANSHI27.GITHUB.IO/PORTFOLIO // SPATIAL-LAB</span>
-                  <span style="color:var(--accent-cobalt); font-weight:700;">● ZERO JAVASCRIPT</span>
+                <div class="key-point">
+                  <span class="check-icon">✓</span>
+                  <span>Responsive academic schedule table displaying course codes, credits, and statuses.</span>
                 </div>
-                <img src="images/webdev-preview.svg" alt="Pure HTML5 and CSS3 Spatial Layout Diagram" width="760" height="380" loading="lazy">
-              </div>
-            </div>
-          </article>
-
-          <!-- Pavilion 04: JAVA PROGRAMMING -->
-          <article class="pavilion-exhibit reverse-flow">
-            <div class="pavilion-watermark-num" aria-hidden="true">04</div>
-
-            <div class="pavilion-dossier">
-              <div class="pavilion-header-tag">
-                <span>04 // CORE JAVA &amp; ALGORITHMS</span>
-              </div>
-
-              <h3 class="pavilion-title">Java OOP &amp; Problem Solving</h3>
-              <p class="pavilion-subtitle">Foundations of Object-Oriented Software Engineering</p>
-
-              <p class="pavilion-narrative">
-                Hands-on practice developing robust software logic in Java at Scaler School of Technology.
-                Emphasizes clean class encapsulation, inheritance, modular structures, control flows,
-                and systematic problem solving through rigorous algorithmic exercises.
-              </p>
-
-              <div class="pavilion-proof-banner">
-                ⚡ <strong>First-Principles Logic:</strong> Building algorithmic problem-solving instincts with clean Java code, standard I/O streams, and object modeling.
-              </div>
-
-              <div class="pavilion-tech-stack">
-                <span class="pavilion-tag">Java (JDK 21)</span>
-                <span class="pavilion-tag">OOP Concepts</span>
-                <span class="pavilion-tag">Problem Solving</span>
-                <span class="pavilion-tag">Data Manipulation</span>
-                <span class="pavilion-tag">Algorithms</span>
-              </div>
-
-              <div class="pavilion-actions">
-                <a href="./resume.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
-                  <span>View Dossier ↗</span>
-                </a>
-                <a href="https://github.com/payanshi27" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">
-                  <span>GitHub Profile ↗</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Pavilion 04 Stage: Java Terminal IDE Frame -->
-            <div class="pavilion-stage" aria-label="Java OOP Development Workbench">
-              <div class="stage-rackmount-chassis">
-                <div class="device-chrome-head">
-                  <span>JAVAC // STUDENT_PROFILE.JAVA</span>
-                  <span style="color:var(--accent-terracotta); font-weight:700;">● COMPILED SUCCESS</span>
+                <div class="key-point">
+                  <span class="check-icon">✓</span>
+                  <span>Functional course registration form featuring text inputs, dropdown selects, and buttons.</span>
                 </div>
-                <img src="images/java-preview.svg" alt="Java Source Code and Terminal Execution Preview" width="760" height="380" loading="lazy">
               </div>
+
+              <div class="project-tags-row">
+                <span class="ptag">HTML5</span>
+                <span class="ptag">CSS3</span>
+                <span class="ptag">Tables</span>
+                <span class="ptag">Forms</span>
+                <span class="ptag">Accessibility</span>
+              </div>
+
+              <div class="project-buttons">
+                <a href="./projects/student-portal/student-portal.html" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                  <span>Open Portal Live</span>
+                  <span>→</span>
+                </a>
+                <a href="https://github.com/payanshi27/portfolio" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                  <span>View Code on GitHub ↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project Visual Showcase -->
+            <div class="project-preview-frame">
+              <div class="frame-bar">
+                <div class="frame-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="frame-url">projects/student-portal/student-portal.html</span>
+              </div>
+              <img src="images/portal-preview.svg" alt="Student Portal Dashboard Preview" width="760" height="380" loading="lazy">
             </div>
           </article>
 
@@ -509,371 +423,138 @@
       </div>
     </section>
 
-    <!-- ======================================================================
-         06. EXPERIMENTS LABORATORY SECTION
-         ====================================================================== -->
-    <section id="laboratory">
-      <div class="canvas-frame">
-        <div class="gallery-landmark-header">
-          <div class="landmark-tag-row">
-            <span class="landmark-index">03 // Experimental Laboratory</span>
-            <span class="landmark-coords">COMPUTATIONAL CSS3 BENCH</span>
-          </div>
-          <h2 class="landmark-headline">Interactive CSS Experiments</h2>
-          <p class="landmark-subtitle">
-            Exploring the physical boundaries of native CSS 3D perspective, matrix transforms, and kinetic keyframes.
-          </p>
+    <!-- ================= EDUCATION ================= -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04 — EDUCATION</span>
+          <h2 class="section-title">My learning <span>journey.</span></h2>
+          <p class="section-subtitle">Academic training and practical computer science coursework.</p>
         </div>
 
-        <div class="experiments-grid-flow">
-          <!-- Exp 01: 3D Kinetic Card Fan -->
-          <article class="lab-experiment-bench">
-            <div>
-              <div class="bench-header">
-                <span class="bench-num">EXP // 01</span>
-                <span style="font-family:var(--font-technical); font-size:11px; color:var(--ink-muted);">Spatial Fan</span>
-              </div>
-              <h3 class="bench-title">3D Kinetic Card Fan</h3>
-              <p class="bench-desc">
-                Dimensional cards overlapping in 3D perspective that fan out into an inspected spatial hand upon hover.
+        <div class="education-card-wrapper">
+          <div class="edu-card">
+            <div class="edu-badge-row">
+              <span class="edu-year">2026 – 2029</span>
+              <span class="edu-status">Currently Studying</span>
+            </div>
+
+            <div class="edu-content">
+              <h3>Scaler School of Technology</h3>
+              <p class="edu-sub">Bachelor of Technology (B.Tech) in Computer Science · Degree awarded by BITS Pilani</p>
+              <p class="edu-desc">
+                Currently developing my skills in programming, web development, data structures, and computer science
+                through hands-on projects, industry mentorship, and daily practical application.
               </p>
-            </div>
 
-            <div class="kinetic-fan-stage" aria-hidden="true">
-              <div class="fan-leaflet fan-l1">
-                <span>01 // HTML5</span>
-                <strong>Semantic.</strong>
-              </div>
-              <div class="fan-leaflet fan-l2">
-                <span>02 // CSS3</span>
-                <strong>Flexbox.</strong>
-              </div>
-              <div class="fan-leaflet fan-l3">
-                <span>03 // JAVA</span>
-                <strong>Logic.</strong>
+              <div class="edu-topics">
+                <span>Web Development (HTML &amp; CSS)</span>
+                <span>Programming in Java</span>
+                <span>Data Structures &amp; Algorithms</span>
+                <span>Git &amp; GitHub</span>
               </div>
             </div>
-
-            <div style="font-family:var(--font-technical); font-size:11px; color:var(--ink-muted);">
-              Hover box to fan out cards in 3D space
-            </div>
-          </article>
-
-          <!-- Exp 02: 3D Rotating Prism -->
-          <article class="lab-experiment-bench">
-            <div>
-              <div class="bench-header">
-                <span class="bench-num">EXP // 02</span>
-                <span style="font-family:var(--font-technical); font-size:11px; color:var(--ink-muted);">Spatial Crystal</span>
-              </div>
-              <h3 class="bench-title">Spatial Gyro-Prism</h3>
-              <p class="bench-desc">
-                Multi-axis geometric crystal rotating in 3D perspective that pauses and magnifies upon hover.
-              </p>
-            </div>
-
-            <div class="gyro-prism-stage" aria-hidden="true">
-              <div class="gyro-prism-mesh">
-                <div class="mesh-face mf-front"></div>
-                <div class="mesh-face mf-back"></div>
-                <div class="mesh-face mf-right"></div>
-                <div class="mesh-face mf-left"></div>
-                <div class="mesh-face mf-top"></div>
-                <div class="mesh-face mf-bottom"></div>
-              </div>
-            </div>
-
-            <div style="font-family:var(--font-technical); font-size:11px; color:var(--ink-muted);">
-              Hover to pause and inspect geometry
-            </div>
-          </article>
-
-          <!-- Exp 03: Telemetry Monospace Console -->
-          <article class="lab-experiment-bench">
-            <div>
-              <div class="bench-header">
-                <span class="bench-num">EXP // 03</span>
-                <span style="font-family:var(--font-technical); font-size:11px; color:var(--ink-muted);">Student Terminal</span>
-              </div>
-              <h3 class="bench-title">Telemetry Diagnostic</h3>
-              <p class="bench-desc">
-                Monospaced hardware console simulation with live stepped caret animation and stack verification.
-              </p>
-            </div>
-
-            <div class="telemetry-console-box" aria-hidden="true">
-              <div>> SCALER.ST: MATRICULATION 2026-2029</div>
-              <div>> PROJECTS: FLEXBOX QUEST &amp; STUDENT PORTAL</div>
-              <div>> CORE STACK: HTML5 · CSS3 · JAVA · GIT</div>
-              <div class="caret-blink">> READY FOR SUMMER 2026</div>
-            </div>
-
-            <div style="font-family:var(--font-technical); font-size:11px; color:var(--ink-muted);">
-              steps(1) hardware caret keyframe
-            </div>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ======================================================================
-         07. CAPABILITIES ARCHITECTURAL BENTO MATRIX
-         ====================================================================== -->
-    <section id="capabilities">
-      <div class="canvas-frame">
-        <div class="gallery-landmark-header">
-          <div class="landmark-tag-row">
-            <span class="landmark-index">04 // Core Competencies</span>
-            <span class="landmark-coords">TECHNICAL SKILL MATRICES</span>
-          </div>
-          <h2 class="landmark-headline">Skills &amp; Technologies</h2>
-          <p class="landmark-subtitle">
-            The foundational technologies I use to build modern, responsive web experiences.
-          </p>
-        </div>
-
-        <div class="capabilities-bento-grid">
-          <article class="bento-module double-width">
-            <div class="module-icon-emblem">🎨</div>
-            <h3 class="module-title">Semantic HTML &amp; Modern CSS Layouts</h3>
-            <p class="module-desc">
-              Building accessible, fluid web applications using semantic HTML5 elements, CSS Box Model precision, Flexbox alignment mechanics, and CSS Grid across mobile, tablet, and desktop viewports.
-            </p>
-            <div class="module-chips-row">
-              <span class="module-chip lead">HTML5 Semantic Elements</span>
-              <span class="module-chip lead">CSS3 Flexbox</span>
-              <span class="module-chip lead">CSS Grid Layout</span>
-              <span class="module-chip">Responsive Web Design</span>
-              <span class="module-chip">CSS Variables</span>
-            </div>
-          </article>
-
-          <article class="bento-module">
-            <div class="module-icon-emblem">☕</div>
-            <h3 class="module-title">Java Programming</h3>
-            <p class="module-desc">
-              Strengthening computer science problem solving and object-oriented fundamentals through structured algorithmic practice in Java.
-            </p>
-            <div class="module-chips-row">
-              <span class="module-chip lead">Java Core</span>
-              <span class="module-chip lead">OOP Principles</span>
-              <span class="module-chip">Data Structures</span>
-              <span class="module-chip">Problem Solving</span>
-            </div>
-          </article>
-
-          <article class="bento-module">
-            <div class="module-icon-emblem">⬡</div>
-            <h3 class="module-title">3D CSS &amp; Transitions</h3>
-            <p class="module-desc">
-              Creating spatial interactive UI with native CSS perspective, transform-style: preserve-3d, and keyframe animations with zero JavaScript runtime overhead.
-            </p>
-            <div class="module-chips-row">
-              <span class="module-chip lead">CSS 3D Transforms</span>
-              <span class="module-chip">Perspective 1400px</span>
-              <span class="module-chip">preserve-3d</span>
-            </div>
-          </article>
-
-          <article class="bento-module double-width">
-            <div class="module-icon-emblem">🐙</div>
-            <h3 class="module-title">Git, GitHub &amp; Collaborative Practice</h3>
-            <p class="module-desc">
-              Managing source code versions, branch lifecycles, structured repository documentation, and automated GitHub Pages deployments.
-            </p>
-            <div class="module-chips-row">
-              <span class="module-chip lead">Git Version Control</span>
-              <span class="module-chip lead">GitHub Repositories</span>
-              <span class="module-chip">GitHub Pages</span>
-              <span class="module-chip">VS Code Workflow</span>
-              <span class="module-chip">WCAG Accessibility</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         08. DOSSIER & CHRONOLOGY TIMELINE
-         ====================================================================== -->
-    <section id="dossier">
-      <div class="canvas-frame">
-        <div class="gallery-landmark-header">
-          <div class="landmark-tag-row">
-            <span class="landmark-index">05 // Academic Path</span>
-            <span class="landmark-coords">LEARNING MILESTONES</span>
-          </div>
-          <h2 class="landmark-headline">My Learning Journey</h2>
-          <p class="landmark-subtitle">
-            Formal computer science training and hands-on project engineering.
-          </p>
-        </div>
-
-        <div class="dossier-timeline-stack">
-          <article class="timeline-entry-card">
-            <div class="timeline-epoch">
-              <span class="epoch-year">2026 – 2029</span>
-              <span class="epoch-status">Current Matriculation</span>
-            </div>
-            <div class="timeline-substance">
-              <h3>B.Tech in Computer Science</h3>
-              <div class="timeline-institution">Scaler School of Technology (Degree awarded by BITS Pilani) · Bengaluru</div>
-              <p class="timeline-prose">
-                Developing core skills in programming, web development, data structures, and computer science fundamentals through practical, project-based learning under industry mentors.
-              </p>
-            </div>
-          </article>
-
-          <article class="timeline-entry-card">
-            <div class="timeline-epoch">
-              <span class="epoch-year">2026</span>
-              <span class="epoch-status">Builders Track</span>
-            </div>
-            <div class="timeline-substance">
-              <h3>Web Development 101 — Builders Day</h3>
-              <div class="timeline-institution">Scaler School of Technology (Group C)</div>
-              <p class="timeline-prose">
-                Mastery of foundational web technologies: semantic HTML5 structures, CSS Box Model mechanics, CSS Flexbox and Grid layouts, fluid responsive design across viewports, CSS transitions, and accessibility standards with zero client-side JavaScript.
-              </p>
-            </div>
-          </article>
-
-          <article class="timeline-entry-card">
-            <div class="timeline-epoch">
-              <span class="epoch-year">2026</span>
-              <span class="epoch-status">Projects</span>
-            </div>
-            <div class="timeline-substance">
-              <h3>Hands-On Web &amp; Java Development</h3>
-              <div class="timeline-institution">Autonomous Project Practice (Flexbox Quest, Student Portal, Spatial Lab)</div>
-              <p class="timeline-prose">
-                Designed and built responsive web applications including a game-inspired Flexbox interface, an accessible student management dashboard, and pure CSS spatial 3D interactive installations.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         09. CINEMATIC TRANSMISSION TERMINAL (CONTACT)
-         ====================================================================== -->
-    <section id="transmission" class="transmission-section">
-      <div class="canvas-frame">
-        <div class="gallery-landmark-header">
-          <div class="landmark-tag-row">
-            <span class="landmark-index">06 // Connect</span>
-            <span class="landmark-coords">STATUS: OPEN FOR OPPORTUNITIES</span>
-          </div>
-          <h2 class="landmark-headline">Have Something To Say?</h2>
-          <p class="landmark-subtitle">
-            If you want to connect with me, discuss web projects, or simply say hello, feel free to reach out.
-          </p>
-        </div>
-
-        <div class="transmission-grid">
-          <div>
-            <h2 class="transmission-headline">
-              Let's Build<br>
-              Something<br>
-              <span class="highlight-italic">Meaningful.</span>
-            </h2>
-
-            <p class="transmission-lead-text">
-              Whether you want to collaborate on front-end projects, discuss responsive design systems, or connect regarding software engineering opportunities, my inbox is always open.
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-info-col">
+            <span class="section-tag">05 — LET'S CONNECT</span>
+            <h2 class="contact-title">Have something to <span>say?</span></h2>
+            <p class="contact-text">
+              If you want to connect with me, discuss web projects, ask questions, or simply say hello, feel free to reach out. My inbox is always open!
             </p>
 
-            <div class="channels-action-grid">
-              <a href="mailto:payanshijain51@gmail.com" class="channel-touchpoint">
+            <div class="contact-channels">
+              <a href="mailto:payanshijain51@gmail.com" class="channel-card">
+                <div class="channel-icon">✉</div>
                 <div>
-                  <div class="touchpoint-type">Direct Email</div>
-                  <div class="touchpoint-val">payanshijain51@gmail.com</div>
+                  <span class="channel-label">Email Me</span>
+                  <strong class="channel-val">payanshijain51@gmail.com</strong>
                 </div>
-                <span class="touchpoint-arrow">→</span>
+                <span class="channel-arrow">→</span>
               </a>
 
-              <a href="https://github.com/payanshi27" class="channel-touchpoint" target="_blank" rel="noopener">
+              <a href="https://github.com/payanshi27" target="_blank" rel="noopener" class="channel-card">
+                <div class="channel-icon">🐙</div>
                 <div>
-                  <div class="touchpoint-type">Code Repository</div>
-                  <div class="touchpoint-val">github.com/payanshi27</div>
+                  <span class="channel-label">GitHub Profile</span>
+                  <strong class="channel-val">github.com/payanshi27</strong>
                 </div>
-                <span class="touchpoint-arrow">→</span>
+                <span class="channel-arrow">→</span>
               </a>
 
-              <a href="https://www.linkedin.com/in/payanshi-jain" class="channel-touchpoint" target="_blank" rel="noopener">
+              <a href="https://www.linkedin.com/in/payanshi-jain" target="_blank" rel="noopener" class="channel-card">
+                <div class="channel-icon">💼</div>
                 <div>
-                  <div class="touchpoint-type">Professional Network</div>
-                  <div class="touchpoint-val">payanshi-jain</div>
+                  <span class="channel-label">LinkedIn</span>
+                  <strong class="channel-val">linkedin.com/in/payanshi-jain</strong>
                 </div>
-                <span class="touchpoint-arrow">→</span>
+                <span class="channel-arrow">→</span>
               </a>
-
-              <div class="channel-touchpoint">
-                <div>
-                  <div class="touchpoint-type">Coordinates</div>
-                  <div class="touchpoint-val">Bengaluru, India</div>
-                </div>
-                <span class="touchpoint-arrow">📍</span>
-              </div>
             </div>
           </div>
 
-          <!-- Pure CSS Contact Dispatcher Form -->
-          <form class="dispatcher-card" action="mailto:payanshijain51@gmail.com" method="post" enctype="text/plain">
-            <div class="field-block">
-              <label for="contact-name" class="field-tag">Identification // Your Name</label>
-              <input type="text" id="contact-name" name="name" class="input-primitive" placeholder="e.g. Alex Sharma" required>
-            </div>
+          <!-- Contact Form -->
+          <div class="contact-form-col">
+            <form class="contact-form" action="mailto:payanshijain51@gmail.com" method="post" enctype="text/plain">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Alex" required>
+              </div>
 
-            <div class="field-block">
-              <label for="contact-email" class="field-tag">Return Channel // Your Email</label>
-              <input type="email" id="contact-email" name="email" class="input-primitive" placeholder="e.g. alex@example.com" required>
-            </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="e.g. alex@example.com" required>
+              </div>
 
-            <div class="field-block">
-              <label for="contact-subject" class="field-tag">Subject // Objective</label>
-              <input type="text" id="contact-subject" name="subject" class="input-primitive" placeholder="Project Inquiry / Opportunity" required>
-            </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Project collaboration / hello" required>
+              </div>
 
-            <div class="field-block">
-              <label for="contact-message" class="field-tag">Transmission // Message</label>
-              <textarea id="contact-message" name="message" class="textarea-primitive" placeholder="Write your message here..." required></textarea>
-            </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+              </div>
 
-            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
-              <span>Send Message</span>
-              <span>→</span>
-            </button>
-          </form>
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span>Send Message</span>
+                <span>→</span>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ========================================================================
-       10. MINIMAL FOOTER
-       ======================================================================== -->
+  <!-- ================= FOOTER ================= -->
   <footer class="site-footer">
-    <div class="canvas-frame footer-inner-wrap">
-      <div>
-        <div class="colophon-title">Payanshi Jain</div>
-        <p class="colophon-desc">© 2026 · Handcrafted with pure semantic HTML5 &amp; CSS3 ❤️</p>
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#home" class="logo">PJ<span>.</span></a>
+        <p>© 2026 Payanshi Jain · Built with HTML &amp; CSS</p>
       </div>
 
-      <nav class="colophon-nav" aria-label="Footer Links">
-        <a href="#hero">Home</a>
-        <a href="#work">Projects</a>
-        <a href="#manifesto">About</a>
-        <a href="#laboratory">Laboratory</a>
-        <a href="#capabilities">Skills</a>
-        <a href="#dossier">Education</a>
-        <a href="#transmission">Contact</a>
-        <a href="./resume.pdf" target="_blank" rel="noopener">Dossier ↗</a>
+      <nav class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/payanshi27" target="_blank" rel="noopener">GitHub</a>
       </nav>
 
-      <a href="#hero" class="zenith-btn" aria-label="Back to top of page">
-        <span>↑ Zenith</span>
+      <a href="#home" class="btn-top" aria-label="Back to top">
+        <span>↑ Top</span>
       </a>
     </div>
   </footer>
