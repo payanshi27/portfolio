@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="javaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F141C" />
+      <stop offset="100%" stop-color="#18202C" />
+    </linearGradient>
+    <linearGradient id="javaOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EA580C" />
+      <stop offset="100%" stop-color="#F97316" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="760" height="380" rx="8" fill="url(#javaBg)" stroke="#2D3748" stroke-width="1.5"/>
+
+  <!-- Window Header -->
+  <rect x="0" y="0" width="760" height="38" rx="8" fill="#131A24"/>
+  <rect x="0" y="30" width="760" height="8" fill="#131A24"/>
+  <circle cx="20" cy="19" r="5" fill="#EF4444" />
+  <circle cx="36" cy="19" r="5" fill="#F59E0B" />
+  <circle cx="52" cy="19" r="5" fill="#10B981" />
+  <rect x="80" y="10" width="420" height="18" rx="4" fill="#0A0E14"/>
+  <text x="92" y="23" font-family="'JetBrains Mono', monospace" font-size="11" fill="#F97316">src/main/java/ — StudentProfile.java (Java OOP &amp; Problem Solving)</text>
+
+  <!-- Split View Left: Java Source Code -->
+  <g transform="translate(24, 54)">
+    <rect width="420" height="236" rx="6" fill="#0A0E14" stroke="#1E2736" stroke-width="1.2"/>
+    <rect x="0" y="0" width="420" height="28" rx="6" fill="#151E2B"/>
+    <text x="14" y="18" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#E2E8F0">☕ StudentProfile.java</text>
+    <text x="320" y="18" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94A3B8">JDK 21 LTS</text>
+
+    <!-- Source Code Lines -->
+    <g font-family="'JetBrains Mono', monospace" font-size="10" transform="translate(14, 40)">
+      <text y="14" fill="#64748B">01  <tspan fill="#F43F5E">public class</tspan> <tspan fill="#38BDF8">StudentProfile</tspan> {</text>
+      <text y="32" fill="#64748B">02    <tspan fill="#F43F5E">private final String</tspan> name = <tspan fill="#34D399">"Payanshi Jain"</tspan>;</text>
+      <text y="50" fill="#64748B">03    <tspan fill="#F43F5E">private final String</tspan> college = <tspan fill="#34D399">"Scaler School of Technology"</tspan>;</text>
+      <text y="68" fill="#64748B">04    <tspan fill="#F43F5E">private final String</tspan> degree = <tspan fill="#34D399">"BITS Pilani B.Tech CS"</tspan>;</text>
+      <text y="86" fill="#64748B">05  </text>
+      <text y="104" fill="#64748B">06    <tspan fill="#F43F5E">public void</tspan> <tspan fill="#38BDF8">buildSystems</tspan>() {</text>
+      <text y="122" fill="#64748B">07      <tspan fill="#E2E8F0">System.out.println(</tspan><tspan fill="#34D399">"Compiling Web &amp; Java Projects..."</tspan><tspan fill="#E2E8F0">);</tspan></text>
+      <text y="140" fill="#64748B">08      <tspan fill="#F43F5E">boolean</tspan> solved = <tspan fill="#F43F5E">true</tspan>;</text>
+      <text y="158" fill="#64748B">09    }</text>
+      <text y="176" fill="#64748B">10  }</text>
+    </g>
+  </g>
+
+  <!-- Split View Right: Terminal Compiler Execution -->
+  <g transform="translate(460, 54)">
+    <rect width="276" height="236" rx="6" fill="#0A0E14" stroke="#1E2736" stroke-width="1.2"/>
+    <rect x="0" y="0" width="276" height="28" rx="6" fill="#151E2B"/>
+    <text x="14" y="18" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#38BDF8">Terminal // bash</text>
+
+    <g font-family="'JetBrains Mono', monospace" font-size="9.5" transform="translate(14, 40)">
+      <text y="16" fill="#94A3B8">$ javac StudentProfile.java</text>
+      <text y="36" fill="#94A3B8">$ java StudentProfile</text>
+      <text y="58" fill="#34D399">> Compiling Web &amp; Java Projects...</text>
+      <text y="78" fill="#38BDF8">> Student: Payanshi Jain</text>
+      <text y="98" fill="#F59E0B">> Track: CS 2026-2029</text>
+      <text y="120" fill="#34D399">✓ BUILD SUCCESS (0.42s)</text>
+      <text y="150" fill="#64748B">> Scanner in = new Scanner(System.in);</text>
+      <text y="170" fill="#34D399">> Tests: 100% Passed</text>
+    </g>
+  </g>
+
+  <!-- Bottom Guaranteed Bar -->
+  <g transform="translate(24, 304)">
+    <rect width="712" height="56" rx="6" fill="#131A24" stroke="#1E2736" stroke-width="1"/>
+    <circle cx="28" cy="28" r="8" fill="#F97316" opacity="0.3"/>
+    <circle cx="28" cy="28" r="4" fill="#F97316"/>
+    <text x="48" y="26" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#F8FAFC">JAVA CORE &amp; OBJECT-ORIENTED PROGRAMMING</text>
+    <text x="48" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#94A3B8">Focusing on object modeling, algorithmic problem solving, and rigorous data structures practice at Scaler.</text>
+    <rect x="580" y="14" width="112" height="28" rx="4" fill="#EA580C"/>
+    <text x="598" y="32" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#FFFFFF">ACTIVE OOP</text>
+  </g>
+</svg>
