@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="spBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B132B" />
+      <stop offset="100%" stop-color="#1C2541" />
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1D4ED8" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="760" height="380" rx="8" fill="url(#spBg)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Browser Frame Header -->
+  <rect x="0" y="0" width="760" height="38" rx="8" fill="#0F172A"/>
+  <rect x="0" y="30" width="760" height="8" fill="#0F172A"/>
+  <circle cx="20" cy="19" r="5" fill="#EF4444" />
+  <circle cx="36" cy="19" r="5" fill="#F59E0B" />
+  <circle cx="52" cy="19" r="5" fill="#10B981" />
+  <rect x="80" y="10" width="420" height="18" rx="4" fill="#020617"/>
+  <text x="92" y="23" font-family="'JetBrains Mono', monospace" font-size="11" fill="#60A5FA">projects/student-portal/ — Academic Records &amp; Course Flow</text>
+
+  <!-- Split View Left: Student Information & Academic Schedule -->
+  <g transform="translate(24, 54)">
+    <rect width="360" height="236" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
+    <rect x="0" y="0" width="360" height="30" rx="6" fill="url(#headerGrad)"/>
+    <text x="16" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">STUDENT PORTAL // ACADEMIC DASHBOARD</text>
+
+    <!-- Student Info Card -->
+    <g transform="translate(16, 40)">
+      <rect width="328" height="64" rx="4" fill="#020617" stroke="#1E293B"/>
+      <circle cx="34" cy="32" r="18" fill="#1D4ED8"/>
+      <text x="26" y="37" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="800" fill="#FFFFFF">PJ</text>
+      <text x="64" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#F8FAFC">Payanshi Jain</text>
+      <text x="64" y="42" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94A3B8">ID: SST2026 // B.Tech Computer Science</text>
+      <text x="64" y="54" font-family="'JetBrains Mono', monospace" font-size="9" fill="#34D399">Status: Active Matriculation · Scaler &amp; BITS Pilani</text>
+    </g>
+
+    <!-- Course Schedule Table -->
+    <g transform="translate(16, 114)">
+      <rect width="328" height="106" rx="4" fill="#020617" stroke="#1E293B"/>
+      <!-- Table Header -->
+      <rect width="328" height="22" rx="4" fill="#1E293B"/>
+      <text x="10" y="15" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#93C5FD">CODE</text>
+      <text x="64" y="15" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#93C5FD">COURSE NAME</text>
+      <text x="210" y="15" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#93C5FD">CREDITS</text>
+      <text x="270" y="15" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#93C5FD">STATUS</text>
+
+      <!-- Row 1 -->
+      <text x="10" y="38" font-family="'JetBrains Mono', monospace" font-size="9" fill="#F8FAFC">CS101</text>
+      <text x="64" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#CBD5E1">Web Systems &amp; CSS3 3D</text>
+      <text x="220" y="38" font-family="'JetBrains Mono', monospace" font-size="9" fill="#F8FAFC">4.0</text>
+      <text x="270" y="38" font-family="'JetBrains Mono', monospace" font-size="9" fill="#34D399">COMPLETED</text>
+
+      <!-- Row 2 -->
+      <text x="10" y="60" font-family="'JetBrains Mono', monospace" font-size="9" fill="#F8FAFC">CS201</text>
+      <text x="64" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#CBD5E1">Data Structures &amp; Java</text>
+      <text x="220" y="60" font-family="'JetBrains Mono', monospace" font-size="9" fill="#F8FAFC">4.0</text>
+      <text x="270" y="60" font-family="'JetBrains Mono', monospace" font-size="9" fill="#60A5FA">ENROLLED</text>
+
+      <!-- Row 3 -->
+      <text x="10" y="82" font-family="'JetBrains Mono', monospace" font-size="9" fill="#F8FAFC">SE302</text>
+      <text x="64" y="82" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#CBD5E1">Distributed Concurrency</text>
+      <text x="220" y="82" font-family="'JetBrains Mono', monospace" font-size="9" fill="#F8FAFC">3.0</text>
+      <text x="270" y="82" font-family="'JetBrains Mono', monospace" font-size="9" fill="#F59E0B">PLANNED</text>
+    </g>
+  </g>
+
+  <!-- Right: Course Registration Form Model -->
+  <g transform="translate(404, 54)">
+    <rect width="332" height="236" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1.2"/>
+    <text x="16" y="26" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" fill="#34D399">Registration Flow &amp; Validation Specs</text>
+
+    <g font-family="'JetBrains Mono', monospace" font-size="10" transform="translate(16, 40)">
+      <rect width="300" height="32" rx="4" fill="#020617" stroke="#1E293B"/>
+      <text x="10" y="20" fill="#94A3B8">Input: Student ID [2026-CS-0418]</text>
+
+      <rect y="38" width="300" height="32" rx="4" fill="#020617" stroke="#1E293B"/>
+      <text x="10" y="58" fill="#94A3B8">Select Department: [Computer Science ▾]</text>
+
+      <rect y="76" width="300" height="32" rx="4" fill="#020617" stroke="#1E293B"/>
+      <text x="10" y="96" fill="#34D399">✓ Form Validation: Semantic Constraints</text>
+
+      <rect y="114" width="300" height="60" rx="4" fill="#020617" stroke="#1E293B"/>
+      <text x="10" y="134" fill="#60A5FA">&lt;form action="..." method="post"&gt;</text>
+      <text x="10" y="150" fill="#F8FAFC">  &lt;table aria-label="Course Grid"&gt;</text>
+      <text x="10" y="166" fill="#94A3B8">  High-contrast WCAG 2.1 AAA accessible</text>
+    </g>
+  </g>
+
+  <!-- Bottom Guaranteed Bar -->
+  <g transform="translate(24, 304)">
+    <rect width="712" height="56" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+    <circle cx="28" cy="28" r="8" fill="#10B981" opacity="0.3"/>
+    <circle cx="28" cy="28" r="4" fill="#10B981"/>
+    <text x="48" y="26" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#F8FAFC">SEMANTIC HTML5 &amp; CSS ACADEMIC ARCHITECTURE</text>
+    <text x="48" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#94A3B8">Engineered for clean information hierarchy, structured tabular data, and accessible form interaction.</text>
+    <rect x="580" y="14" width="112" height="28" rx="4" fill="#1D4ED8"/>
+    <text x="596" y="32" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#FFFFFF">VIEW LIVE</text>
+  </g>
+</svg>

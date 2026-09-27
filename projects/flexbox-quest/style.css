@@ -1,0 +1,358 @@
+/* -------------------------
+   Basic Reset
+------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111827;
+    color: white;
+}
+
+
+/* -------------------------
+   Header
+------------------------- */
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px;
+    margin: 10px;
+
+    background-color: #1f2937;
+    border: 2px solid #374151;
+    border-radius: 10px;
+}
+
+.game-header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.game-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* -------------------------
+   Buttons
+------------------------- */
+
+button {
+    padding: 10px 16px;
+
+    border: 2px solid #4b5563;
+    border-radius: 8px;
+
+    background-color: #374151;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4b5563;
+}
+
+
+/* -------------------------
+   Game Area
+------------------------- */
+
+.game-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    min-height: 450px;
+
+    margin: 10px;
+    padding: 30px;
+
+    background-color: #38bdf8;
+
+    border: 3px solid #0284c7;
+    border-radius: 10px;
+}
+
+.game-area h2 {
+    margin: 0;
+}
+
+.player {
+    padding: 15px 25px;
+
+    background-color: #f97316;
+
+    border: 3px solid #c2410c;
+    border-radius: 10px;
+
+    font-weight: bold;
+}
+
+.star {
+    padding: 10px 20px;
+
+    background-color: #facc15;
+
+    border: 2px solid #ca8a04;
+    border-radius: 8px;
+
+    color: #111827;
+    font-weight: bold;
+}
+
+.platform {
+    padding: 12px 50px;
+
+    background-color: #475569;
+
+    border: 2px solid #1e293b;
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.platform-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.game-message {
+    padding: 10px 20px;
+
+    background-color: #0f172a;
+
+    border: 2px solid #334155;
+    border-radius: 8px;
+}
+
+
+/* -------------------------
+   Game Panels
+------------------------- */
+
+.game-panels {
+    display: flex;
+    gap: 20px;
+
+    margin: 10px;
+}
+
+.panel {
+    flex: 1;
+
+    padding: 20px;
+
+    background-color: #1f2937;
+
+    border: 2px solid #374151;
+    border-radius: 10px;
+}
+
+.panel h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+
+/* -------------------------
+   Controls
+------------------------- */
+
+.controls {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.control-row {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.jump-button {
+    margin-top: 5px;
+    padding: 12px 30px;
+}
+
+
+/* -------------------------
+   Inventory
+------------------------- */
+
+.inventory-items {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.item {
+    display: inline-block;
+
+    padding: 15px;
+
+    background-color: #374151;
+
+    border: 2px solid #6b7280;
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+
+/* -------------------------
+   Quest
+------------------------- */
+
+.quest {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.quest-item {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px;
+
+    background-color: #374151;
+
+    border: 1px solid #4b5563;
+    border-radius: 6px;
+}
+
+
+/* -------------------------
+   Footer
+------------------------- */
+
+footer {
+    margin: 10px;
+    padding: 20px;
+
+    background-color: #1f2937;
+
+    border: 2px solid #374151;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+
+/* -------------------------
+   Responsive Design
+------------------------- */
+
+@media (max-width: 768px) {
+
+    .game-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .game-info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .game-panels {
+        flex-direction: column;
+    }
+
+    .game-area {
+        min-height: 400px;
+        padding: 20px;
+    }
+
+    .platform-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .platform {
+        padding: 10px 35px;
+    }
+}
+
+
+/* -------------------------
+   Small Mobile Screens
+------------------------- */
+
+@media (max-width: 375px) {
+
+    .game-header {
+        margin: 5px;
+        padding: 15px;
+    }
+
+    .game-header h1 {
+        font-size: 22px;
+    }
+
+    .game-info {
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .game-area {
+        margin: 5px;
+        padding: 15px;
+    }
+
+    .game-panels {
+        margin: 5px;
+    }
+
+    .panel {
+        padding: 15px;
+    }
+
+    .platform {
+        padding: 8px 25px;
+        font-size: 14px;
+    }
+
+    footer {
+        margin: 5px;
+    }
+}

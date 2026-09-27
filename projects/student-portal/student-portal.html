@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Portal</title>
+
+    <style>
+
+        /* Element Selector */
+        body {
+            background-color: #f4f7fb;
+            color: #222;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #1d4ed8;
+        }
+
+        h2 {
+            color: #15803d;
+        }
+
+        header {
+            background-color: #dbeafe;
+            padding: 20px;
+            border: 1px solid #93c5fd;
+        }
+
+        nav {
+            background-color: #1e3a8a;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin-top: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+
+        /* Table Styling */
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #dbeafe;
+        }
+
+
+        /* Class Selector */
+
+        .highlight {
+            color: #15803d;
+            font-weight: bold;
+        }
+
+
+        /* ID Selector */
+
+        #student-name {
+            color: #1d4ed8;
+            font-weight: bold;
+        }
+
+
+        /* Form */
+
+        label {
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            padding: 8px;
+            width: 300px;
+            max-width: 100%;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        .option {
+            display: inline;
+            font-weight: normal;
+            margin-right: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            margin-right: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .submit-button {
+            background-color: #16a34a;
+            color: white;
+        }
+
+        .reset-button {
+            background-color: #dc2626;
+            color: white;
+        }
+
+
+        /* Bonus Badge */
+
+        .badge {
+            background-color: #facc15;
+            color: #713f12;
+            padding: 5px 10px;
+            margin-left: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>Student Portal</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#profile">Profile</a>
+            <a href="#courses">Courses</a>
+            <a href="#register">Register</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+
+    <main>
+
+        <!-- Student Profile -->
+
+        <section id="profile">
+
+            <h2>Student Profile</h2>
+
+            <table>
+
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <span id="student-name">Payanshi Jain</span>
+                        <span class="badge">Top Performer</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Student ID</td>
+                    <td>26bcs10646</td>
+                </tr>
+
+                <tr>
+                    <td>Program</td>
+                    <td class="highlight">Computer Science</td>
+                </tr>
+
+                <tr>
+                    <td>Year</td>
+                    <td>1st Year</td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <a href="mailto:payanshi.26bcs10646@sst.scaler.com">
+                            payanshi.26bcs10646@sst.scaler.com
+                        </a>
+                    </td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- Skills -->
+
+        <section>
+
+            <h2>My Skills</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Git</li>
+            </ul>
+
+        </section>
+
+
+        <!-- Weekly Schedule -->
+
+        <section>
+
+            <h2>Weekly Schedule</h2>
+
+            <table>
+
+                <tr>
+                    <th>Day</th>
+                    <th>9:00 AM</th>
+                    <th>11:00 AM</th>
+                    <th>2:00 PM</th>
+                </tr>
+
+                <tr>
+                    <td>Monday</td>
+                    <td>HTML</td>
+                    <td>Mathematics</td>
+                    <td>DSA</td>
+                </tr>
+
+                <tr>
+                    <td>Tuesday</td>
+                    <td>CSS</td>
+                    <td>DBMS</td>
+                    <td>English</td>
+                </tr>
+
+                <tr>
+                    <td>Wednesday</td>
+                    <td>JavaScript</td>
+                    <td>DSA</td>
+                    <td>Mathematics</td>
+                </tr>
+
+                <tr>
+                    <td>Thursday</td>
+                    <td>DBMS</td>
+                    <td>HTML</td>
+                    <td>Project</td>
+                </tr>
+
+                <tr>
+                    <td>Friday</td>
+                    <td>DSA</td>
+                    <td>CSS</td>
+                    <td>Workshop</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- Course Registration -->
+
+        <section id="register">
+
+            <h2>Course Registration</h2>
+
+            <form>
+
+                <h3>Student Information</h3>
+
+                <!-- Name -->
+
+                <label for="name">Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                >
+
+
+                <!-- Email -->
+
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                >
+
+
+                <!-- Student ID -->
+
+                <label for="student-id">Student ID</label>
+
+                <input
+                    type="text"
+                    id="student-id"
+                    name="student-id"
+                    placeholder="Enter your student ID"
+                >
+
+
+                <!-- Course -->
+
+                <label for="course">Select Course</label>
+
+                <select id="course" name="course">
+
+                    <option value="">Select Course</option>
+
+                    <option value="html-css">
+                        HTML & CSS
+                    </option>
+
+                    <option value="javascript">
+                        JavaScript
+                    </option>
+
+                    <option value="python">
+                        Python
+                    </option>
+
+                    <option value="dsa">
+                        Data Structures
+                    </option>
+
+                    <option value="dbms">
+                        Database Management
+                    </option>
+
+                </select>
+
+
+                <!-- Learning Mode -->
+
+                <h3>Preferred Learning Mode</h3>
+
+                <input
+                    type="radio"
+                    id="online"
+                    name="learning-mode"
+                    value="online"
+                >
+
+                <label class="option" for="online">
+                    Online
+                </label>
+
+
+                <input
+                    type="radio"
+                    id="offline"
+                    name="learning-mode"
+                    value="offline"
+                >
+
+                <label class="option" for="offline">
+                    Offline
+                </label>
+
+
+                <!-- Skills -->
+
+                <h3>Skills You Already Know</h3>
+
+                <input
+                    type="checkbox"
+                    id="skill-html"
+                    name="skills"
+                    value="html"
+                >
+
+                <label class="option" for="skill-html">
+                    HTML
+                </label>
+
+
+                <input
+                    type="checkbox"
+                    id="skill-css"
+                    name="skills"
+                    value="css"
+                >
+
+                <label class="option" for="skill-css">
+                    CSS
+                </label>
+
+
+                <input
+                    type="checkbox"
+                    id="skill-js"
+                    name="skills"
+                    value="javascript"
+                >
+
+                <label class="option" for="skill-js">
+                    JavaScript
+                </label>
+
+
+                <input
+                    type="checkbox"
+                    id="skill-python"
+                    name="skills"
+                    value="python"
+                >
+
+                <label class="option" for="skill-python">
+                    Python
+                </label>
+
+
+                <!-- Buttons -->
+
+                <br>
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+                    Submit
+                </button>
+
+                <button
+                    type="reset"
+                    class="reset-button"
+                >
+                    Reset
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+        <p>Student Portal © 2026</p>
+    </footer>
+
+</body>
+
+</html>
+
+
