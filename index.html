@@ -502,7 +502,9 @@
 
           <!-- Contact Form -->
           <div class="contact-form-col">
-            <form class="contact-form" action="mailto:payanshijain51@gmail.com" method="post" enctype="text/plain">
+            <form class="contact-form" action="https://formsubmit.co/payanshijain51@gmail.com" method="POST" id="contact-form">
+              <input type="hidden" name="_subject" value="New Portfolio Contact Message!">
+              <input type="hidden" name="_captcha" value="false">
               <div class="form-group">
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" placeholder="e.g. Alex" required>
@@ -559,6 +561,48 @@
       </a>
     </div>
   </footer>
+
+  <script>
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const submitBtn = contactForm.querySelector('.btn-submit');
+        const originalContent = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<span>Sending...</span>';
+        submitBtn.disabled = true;
+
+        try {
+          const formData = new FormData(contactForm);
+          const response = await fetch('https://formsubmit.co/ajax/payanshijain51@gmail.com', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify(Object.fromEntries(formData))
+          });
+
+          if (response.ok) {
+            submitBtn.innerHTML = '<span>✓ Message Sent!</span>';
+            submitBtn.style.background = '#10B981';
+            submitBtn.style.borderColor = '#10B981';
+            contactForm.reset();
+            setTimeout(() => {
+              submitBtn.innerHTML = originalContent;
+              submitBtn.style.background = '';
+              submitBtn.style.borderColor = '';
+              submitBtn.disabled = false;
+            }, 4000);
+          } else {
+            contactForm.submit();
+          }
+        } catch (err) {
+          contactForm.submit();
+        }
+      });
+    }
+  </script>
 
 </body>
 </html>
